@@ -1,6 +1,6 @@
 [
 {
-"id":1,
+"id":"1",
 "imgSrc": "product1",
 "productTitle": "Ženska majica",
 "model": "Cosmos",
@@ -16,7 +16,7 @@
 "action" : false
 },
 {
-"id":2,
+"id":"2",
 "imgSrc": "product12",
 "productTitle": "Muška majica",
 "model": "Legendary",
@@ -32,7 +32,7 @@
 "action" : true
 },
 {
-"id":3,
+"id":"3",
 "imgSrc": "product2",
 "productTitle": "Ženski duks",
 "model": "X style",
@@ -48,7 +48,7 @@
 "action" : false
 },
 {
-"id":4,
+"id":"4",
 "imgSrc": "product13",
 "productTitle": "Muški duks",
 "model": "Frogster",
@@ -64,7 +64,7 @@
 "action" : false
 },
 {
-"id":5,
+"id":"5",
 "imgSrc": "product3",
 "productTitle": "Ženski dzemper",
 "model": "X style",
@@ -80,7 +80,7 @@
 "action" : false
 },
 {
-"id":6,
+"id":"6",
 "imgSrc": "product14",
 "productTitle": "Muška jakna",
 "model": "V style",
@@ -96,7 +96,7 @@
 "action" : true
 },
 {
-"id":7,
+"id":"7",
 "imgSrc": "product4",
 "productTitle": "Ženska bluza",
 "model": "Cosmos",
@@ -112,7 +112,7 @@
 "action" : false
 },
 {
-"id":8,
+"id":"8",
 "imgSrc": "product15",
 "productTitle": "Muški duks",
 "model": "North west",
@@ -128,7 +128,7 @@
 "action" : true
 },
 {
-"id":9,
+"id":"9",
 "imgSrc": "product5",
 "productTitle": "Ženska bluza",
 "model": "North west",
@@ -144,7 +144,7 @@
 "action" : false
 },
 {
-"id":10,
+"id":"10",
 "imgSrc": "product16",
 "productTitle": "Muški prsluk",
 "model": "North west",
@@ -160,7 +160,7 @@
 "action" : false
 },
 {
-"id":11,
+"id":"11",
 "imgSrc": "product6",
 "productTitle": "Ženska bluza",
 "model": "North west",
@@ -176,7 +176,7 @@
 "action" : true
 },
 {
-"id":12,
+"id":"12",
 "imgSrc": "product7",
 "productTitle": "Ženski duks",
 "model": "North west",
@@ -192,7 +192,7 @@
 "action" : false
 },
 {
-"id":13,
+"id":"13",
 "imgSrc": "product8",
 "productTitle": "Ženska majica",
 "model": "North west",
@@ -208,7 +208,7 @@
 "action" : true
 },
 {
-"id":14,
+"id":"14",
 "imgSrc": "product9",
 "productTitle": "Ženska majica",
 "model": "North west",
@@ -224,7 +224,7 @@
 "action" : true
 },
 {
-"id":15,
+"id":"15",
 "imgSrc": "product10",
 "productTitle": "Ženska bluza",
 "model": "North west",
@@ -240,7 +240,7 @@
 "action" : false
 },
 {
-"id":16,
+"id":"16",
 "imgSrc": "product11",
 "productTitle": "Ženska kosulja",
 "model": "North west",
