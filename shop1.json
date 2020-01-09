@@ -2,7 +2,7 @@
 {
 "id":1,
 "imgSrc": "product1",
-"productTitle": "Ženska majica",
+"productTitle": "Å½enska majica",
 "model": "Cosmos",
 "price": "3.500",
 "colors": [
@@ -18,7 +18,7 @@
 {
 "id":2,
 "imgSrc": "product12",
-"productTitle": "Muška majica",
+"productTitle": "MuÅ¡ka majica",
 "model": "Legendary",
 "price": "4.500",
 "colors": [
@@ -34,7 +34,7 @@
 {
 "id":3,
 "imgSrc": "product2",
-"productTitle": "Ženski duks",
+"productTitle": "Å½enski duks",
 "model": "X style",
 "price": "6.000",
 "colors": [
@@ -50,7 +50,7 @@
 {
 "id":4,
 "imgSrc": "product13",
-"productTitle": "Muški duks",
+"productTitle": "MuÅ¡ki duks",
 "model": "Frogster",
 "price": "4.500",
 "colors": [
@@ -66,7 +66,7 @@
 {
 "id":5,
 "imgSrc": "product3",
-"productTitle": "Ženski dzemper",
+"productTitle": "Å½enski dzemper",
 "model": "X style",
 "price": "6.500",
 "colors": [
@@ -82,7 +82,7 @@
 {
 "id":6,
 "imgSrc": "product14",
-"productTitle": "Muška jakna",
+"productTitle": "MuÅ¡ka jakna",
 "model": "V style",
 "price": "12.000",
 "colors": [
@@ -98,7 +98,7 @@
 {
 "id":7,
 "imgSrc": "product4",
-"productTitle": "Ženska bluza",
+"productTitle": "Å½enska bluza",
 "model": "Cosmos",
 "price": "5.500",
 "colors": [
@@ -114,7 +114,7 @@
 {
 "id":8,
 "imgSrc": "product15",
-"productTitle": "Muški duks",
+"productTitle": "MuÅ¡ki duks",
 "model": "North west",
 "price": "4.880",
 "colors": [
@@ -130,7 +130,7 @@
 {
 "id":9,
 "imgSrc": "product5",
-"productTitle": "Ženska bluza",
+"productTitle": "Å½enska bluza",
 "model": "North west",
 "price": "11.880",
 "colors": [
@@ -146,7 +146,7 @@
 {
 "id":10,
 "imgSrc": "product16",
-"productTitle": "Muški prsluk",
+"productTitle": "MuÅ¡ki prsluk",
 "model": "North west",
 "price": "4.880",
 "colors": [
@@ -162,7 +162,7 @@
 {
 "id":11,
 "imgSrc": "product6",
-"productTitle": "Ženska bluza",
+"productTitle": "Å½enska bluza",
 "model": "North west",
 "price": "4.280",
 "colors": [
@@ -178,7 +178,7 @@
 {
 "id":12,
 "imgSrc": "product7",
-"productTitle": "Ženski duks",
+"productTitle": "Å½enski duks",
 "model": "North west",
 "price": "5.880",
 "colors": [
@@ -194,7 +194,7 @@
 {
 "id":13,
 "imgSrc": "product8",
-"productTitle": "Ženska majica",
+"productTitle": "Å½enska majica",
 "model": "North west",
 "price": "8.880",
 "colors": [
@@ -210,7 +210,7 @@
 {
 "id":14,
 "imgSrc": "product9",
-"productTitle": "Ženska majica",
+"productTitle": "Å½enska majica",
 "model": "North west",
 "price": "1.990",
 "colors": [
@@ -226,7 +226,7 @@
 {
 "id":15,
 "imgSrc": "product10",
-"productTitle": "Ženska bluza",
+"productTitle": "Å½enska bluza",
 "model": "North west",
 "price": "4.880",
 "colors": [
@@ -242,7 +242,7 @@
 {
 "id":16,
 "imgSrc": "product11",
-"productTitle": "Ženska kosulja",
+"productTitle": "Å½enska kosulja",
 "model": "North west",
 "price": "2.100",
 "colors": [
