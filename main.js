@@ -1,8 +1,18 @@
-// https://raw.githubusercontent.com/HamzaAhmetagic/shop1/master/shop1.json
+// https://raw.githubusercontent.com/Danilovesovic/shop/master/shop.json
+window.addEventListener("beforeunload",save);
 let template = document.querySelector("[type='template']").innerHTML;
 let productsRow = document.querySelector("#productsRow")
 let collection = document.querySelectorAll("[data-col]")
 let categories = document.querySelectorAll("[data-links]")
+let search = document.querySelector("input")
+let korpa = document.querySelector(".cart")
+setItemCount()
+let shopKorpa = [];
+let selectedProduct = [];
+if (localStorage.shopKorpa) {
+	shopKorpa = JSON.parse(localStorage.shopKorpa)
+	console.log(shopKorpa)
+}
 
 
 let xml = new XMLHttpRequest();
@@ -16,6 +26,9 @@ xml.onreadystatechange = function(){
 xml.send()
 
 function startShop(data){
+	search.addEventListener("keyup",searchFilter)
+
+
 	for (var i = 0; i < collection.length; i++) {
 		collection[i].addEventListener("click",showCollections)
 	}
@@ -28,11 +41,45 @@ function startShop(data){
 	for (var i = 0; i < data.length; i++) {
 		newTemplate += template.replace("{{imgSrc}}",data[i].imgSrc)
 								.replace("{{productTitle}}",data[i].productTitle)
+								.replace("{{productTitle}}",data[i].productTitle)
 								.replace("{{model}}",data[i].model)
 								.replace("{{price}}",data[i].price)
+								.replace("{{id}}",data[i].id)
+								.replace("{{one}}",data[i].id)
 }
 	productsRow.innerHTML = newTemplate;
+	let dataIcon = document.querySelectorAll("[data-icon='shop']")
+	let allImgs = document.querySelectorAll("[data-one]")
+
+	for (var i = 0; i < dataIcon.length; i++) {
+		dataIcon[i].addEventListener("click",addToCart)
+		allImgs[i].addEventListener("click",addToOneProduct)
 	}
+	}
+	function addToOneProduct(e){
+		e.preventDefault();
+		let id = this.getAttribute("data-one")
+		let oneProduct = data.filter(function(el){
+			return el.id == id
+		})[0]
+		selectedProduct = oneProduct;
+		localStorage.selectedProduct = JSON.stringify(selectedProduct);
+		location.href = "detailed.html"
+	}
+	function addToCart(e){
+		e.preventDefault()
+		let id = this.getAttribute("data-id")
+		// console.log(id)
+		let product = data.filter(function(el){
+			return el.id == id
+		})[0]
+
+		shopKorpa.push(product)
+		// console.log(shopKopra)
+		localStorage.shopKorpa = JSON.stringify(shopKorpa)
+		setItemCount()
+	}
+
 	displayProduct(data)
 	function showCollections(e){
 		e.preventDefault()
@@ -60,9 +107,34 @@ function startShop(data){
 		removeActive()
 		this.className = "active"
 	}
+	function searchFilter(){
+	let val = this.value;
+	let trimVal = val.replace(".","")
+	console.log(trimVal-10)
+	let newArray = data.filter(function(el){
+		return parseInt(el.price.replace(".","")) <= parseInt(trimVal)
+
+	})
+	// console.log(newArray)
+	// displayProduct(newArray)
+	if (val.length > 3) {
+		displayProduct(newArray)
+	}
+}
 }
 function removeActive(){
 	for (var i = 0; i < categories.length; i++) {
 			categories[i].className = ""
 		}
+
+}
+
+function save(){
+	let count = korpa.querySelector("span").innerHTML
+	localStorage.itemCount = count;
+}
+function setItemCount(){
+	if (localStorage.shopKorpa) {
+		korpa.querySelector("span").innerHTML = JSON.parse(localStorage.shopKorpa).length
+	} 
 }
